@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  background-color: red;
+}
+
+main {
+    background-color: aqua;
+    width: 50%
+}
+
+
+
+/* block elements default take up 100 percent of AVAILABLE width / dependent on parent element */
+p {
+    background-color: lightgray;
+}
+
+
+
+/* this class is on a span, spans are inline
+so you cannot adjust margin top and bottom or height
+and adjusting padding top and bottom can cause it to overlap elements above
+one solution is display: inline-block so no line break but has height 
+could be handy turn link into button or turn a list into a row
+*/
+.opposite {
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 4rem;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: .5rem;
+    text-align: right;
+    margin: 0;
+    background-color: black;
+}
+
+li {
+    display: inline-block;
+    margin-inline: .5rem;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:link {
+    color: white;
+}
+
+li a:visited {
+    color: white;
+}
+
+li a:hover, li a:focus {
+    border-bottom: 1px solid whitesmoke;
+}
+
+li a:active {
+    color: darkgoldenrod;
+}
+
