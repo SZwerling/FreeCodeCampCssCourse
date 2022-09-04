@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5% 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+ol {
+    list-style-type:lower-roman;
+    line-height: 1.6;
+}
+
+ ol ::marker {
+    color: darkblue;
+    /* content: "$" overrides marker*/
+}
+
+ol li:nth-child(2) {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    /* list-style-image: url('../images/favicon.png');   works great but could not resize image*/ 
+}
+
+
+
+ul li {
+    padding: 10px 30px;
+    background-image: url('../images/favicon.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
+}
