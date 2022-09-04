@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header {
+    background-color: darkgray;
+    width: 50%;
+}
+
+
+ main {
+    width: 50vw;
+    background-color: aqua;
+ } */
+
+
+body {
+    min-height: 100vh;
+}
+
+
+p {
+    font-size: 1.5rem;
+    width: 40ch;
+}
+
+
+/* h1 is a block level element and has a set width of 100 percent of width inherited from parent*/
+/* so now h1 takes 50 percent of header and header is taking 50 percet */
+.heading {
+    background-color: darkcyan;
+    border: 5px solid black;
+    /* width: 50%; */
+    font-size: 2rem;
+    padding: .3em
+}

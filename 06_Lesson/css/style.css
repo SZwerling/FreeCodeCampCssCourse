@@ -1,0 +1,34 @@
+
+/* Typography is the way that text
+is arranged and presented */
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* text settings that are not directly related to font */
+p {
+    /* line-height: 1.5;
+    letter-spacing: 1em;
+    text-decoration: line-through;
+    text-transform: uppercase; */
+    text-align: justify;
+    text-indent: 1.5em;
+
+    /* font-weight: 700; */
+    
+    
+}
+
+
+
+
+
+
+/* the text in the label inherits by default but not the other form elements */
+/* input, button {
+    font: inherit;
+} */

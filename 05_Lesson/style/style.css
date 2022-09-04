@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: 2px solid red;
+    border-top: 5px outset black;
+    outline: 5px solid purple;
+    outline-offset: 5px;
+    font-size: 1.5rem;
+    margin: 5rem 3rem 2rem 1rem;
+    padding: 1rem;
+
+}
+
+.circle {
+    margin: 3rem auto;
+    width: 100px;
+    height: 100px;
+    background-color:darkgoldenrod;
+    border: 2px solid black;
+    border-radius: 30px;
+    outline: 2px solid darkblue;
+    outline-offset: .3rem;
+
+
+}
+/* 
+body {
+    min-height: 100vh;
+}
+ 
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+main {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    width: 40ch;
+} */
