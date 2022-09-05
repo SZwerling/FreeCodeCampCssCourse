@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.columns {
+    column-count: 4;
+    column-width: 250px;
+    /* columns: 4 250px;  shorthand*/
+    column-rule: 2px solid black;
+    column-gap: 2rem;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: antiquewhite;
+    padding: 1rem;
+    break-inside: avoid;
+}
+
+
+/* we need two class to double specificty to overcome no top margin
+rule we set in .columns p */
+.columns .quote {
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    column-span: all;
+    margin-top: 2rem;
+}
+
+.no-wrap {
+    white-space: nowrap;
+    /* this keeps "-the dude" from splitting on re-sizing */
+}
+
+/* a bottom margin of 3 meeting a top margin of 2 does not give a combined margin of 5
+they overlap, called margin collapse */
