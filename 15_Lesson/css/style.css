@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 100px auto 75px;
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd hd"
+  "mn mn mn mn mn mn mn sd sd"
+  "ft ft ft ft ft ft ft ft ft"
+  ;
+  gap: .5rem;
+}
+
+.el {
+  background-color: rebeccapurple;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+
+.header {
+  grid-area: hd;
+}
+
+.sidebar {
+  grid-area: sd;
+  background-color: blue;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.container {
+  grid-area: mn;
+  font-size: 1.5rem;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 2fr 2fr);
+  grid-auto-rows: minmax(150px auto);
+  gap: .5rem;
+}
+
+.box {
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.box:nth-child(1) {
+  background-color: darkcyan;
+  grid-column: 1 / 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  display: grid;
+  place-content: center;
+  /* if we just put one value, it will apply to align content and justify content */
+}
+/* 
+shorten these to place-content
+align-content: center;
+justify-content: center; */
+
+.box:nth-child(2) {
+  background-color: darkgreen;
+  grid-column: 1/ 4;
+  grid-row: 3 / 5;
+}
+
+/* can shorten these to grid-column: startNumber / endNumber;
+grid-column-start: 1;
+  grid-column-end: 3; */
