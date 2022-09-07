@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,31 +11,42 @@
 img { display: block }
 
 body {
-    display: grid;
+    font-family: 'Roboto', sans-serif;
+   
+
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 50px 1fr;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .header {
     background-color: aqua;
-    grid-column: 1/ 3;
+   height: 100px;
+    display: flex;
+   
+    align-items: center;
 }
 
+nav {
+  background-color: purple;
+  width: 100%;
 
+
+}
 
 ul {
+    font-size: 2rem;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
+    justify-content: space-around;   
 }
 
 li a {
     color: black;
     text-decoration: none;
-    font-size: 3rem;
 }
 
 li a:link {
@@ -46,28 +61,95 @@ li a:active {
     color: rgb(213, 182, 7);
 }
 
+.container {
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: .5rem;
+}
+
 .info {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* display: grid;
+  place-content: center; */
+  background-color: aliceblue;
+}
+
+.info-two {
+ 
+ background-color: beige;
+}
+
+.info-three {
+    
+    background-color: bisque;
+}
+
+.info-four {
+    background-color: azure;
 }
 
 
 
 .figure {
     display: flex;
-    align-items: center;
-    justify-content: center;
+   background-color: aqua;
+   
 }
+   
 
 .figure img {
-    width: 60%;
+    width: 200px;
     min-width: 5rem;
     height: auto;
+    opacity: .85;
+    background-color: aqua;
 }
 
 figcaption {
     position: absolute;
     right: 10000px;
 }
+
+
+@media only screen and (min-width: 500px) {
+    .container {
+        margin: .5rem;
+        min-height: 400px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      
+        gap: .5rem;
+    }
+    
+.info-two {
+    grid-row: span 2;   
+   }
+
+   .info-three {
+    grid-column: span 2;
+    background-color: bisque;
+}
+
+.info-four {
+    grid-column: 3 / 4;
+   
+}
+.info-four {
+    grid-column: 3 / 4;
+ }
+
+.figure {
+    grid-column: span 2;
+ }
+
+ .container {
+    margin: .5rem;
+    min-height: 400px;
+    display: grid;
+    gap: .5rem;
+}
+ul {
+    font-size: 3rem;  
+}
+  }
