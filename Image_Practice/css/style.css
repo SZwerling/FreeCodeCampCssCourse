@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-  background-color: purple;
+  background-color: whitesmoke;
   width: 100%;
 
 
@@ -89,21 +89,31 @@ li a:active {
     background-color: azure;
 }
 
-
+.nowrap {
+    white-space: nowrap;
+}
 
 .figure {
-    display: flex;
-   background-color: aqua;
-   
+   display: flex;
+   color: white;
+   justify-content: start;
+   align-items: center;
+   gap: 1rem;
+   background-image: url(../img/fencing-gaf2e47f2c_1280.png), linear-gradient(to left, #FFC11F, #A40606,#FE650D, #D98324)
 }
-   
+
+.h1 {
+    font-size: 2rem;
+}
 
 .figure img {
-    width: 200px;
-    min-width: 5rem;
+    width: 25%;
     height: auto;
-    opacity: .85;
-    background-color: aqua;
+    opacity: 1;
+    /* background-color: aqua; */
+    min-width: 100px;
+    border: 5px double whitesmoke;
+    border-radius: 50%;
 }
 
 figcaption {
