@@ -14,6 +14,14 @@ img {
     height: auto;
  }
 
+ /* || VARIABLES */
+ :root {
+    --BGCOLOR: rgb(149, 140, 140);
+    --LIGHTCOLOR: whitesmoke;
+    --DARK-COLOR: black;
+  
+ }
+
  /* || UTILITY CLASSES */
 .nowrap {
     white-space: nowrap;
@@ -22,15 +30,15 @@ img {
 body {
     font: 1.5rem 'Roboto', sans-serif;
     min-height: 100vh;
-    background-color: rgb(149, 140, 140);
-    background-image: radial-gradient(whitesmoke, rgb(149, 140, 140));
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(var(--LIGHTCOLOR), var(--BGCOLOR));
     display: flex;
     flex-direction: column;
 }
 
 header, footer {
-    color: whitesmoke;
-    background-color: black;
+    color: var(--LIGHTCOLOR);
+    background-color: var(--DARK-COLOR);
     position: sticky;
     text-align: center;
 }
@@ -40,22 +48,22 @@ header {
 }
 
 nav {
-    background-color: white;
+    background-color: var(--LIGHT-COLOR);
     padding: .5rem;
     border-bottom: 2px solid black;
     display: flex;
     justify-content: space-evenly;
 }
 
-nav a,
+nav a:link,
 nav a:visited {
-   color: black;
+   color: var(--LIGHT-COLOR);
    text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus {
-   color: hsla(0, 0%, 20%, 0.6);
+   color: var(--BGCOLOR);
 }
 
 .container {
@@ -69,7 +77,7 @@ nav a:focus {
 
 .card {
     width: min(100%, 350px);
-    background-color: whitesmoke;
+    background-color: var(--LIGHT-COLOR);
     border: 2px solid black;
     border-radius: 15px;
     padding: 0.5rem;
@@ -100,6 +108,10 @@ nav a:focus {
 .card figcaption {
     position: absolute;
     left: -10000px;
+}
+
+p {
+    margin-bottom: 20px;
 }
 
 footer {
