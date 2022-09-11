@@ -132,3 +132,41 @@ footer {
         gap: .3rem
     }
 }
+
+
+.animate {
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+        border: none;
+    }
+    33% {
+        width: 200px;
+        transform: translateX(300px) rotate(180deg);
+        background-image: url('../img/con_azul.jpg');
+        opacity: .3;
+    }
+    45% {
+        background-image: url('../img/con_azul.jpg');
+        opacity: .6;
+    }
+    66% {
+        transform: translateX(-300px) rotate(-180deg);
+        background-image: url('../img/con_azul.jpg');
+        opacity: 1;
+    }
+    99%{
+        background-image: url('../img/con_azul.jpg');
+        opacity: .5;
+    }
+    100% {
+        border: none;
+        transform: translateX(0); 
+    }
+}
