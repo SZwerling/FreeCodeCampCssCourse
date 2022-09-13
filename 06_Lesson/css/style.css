@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 
 /* Typography is the way that text
 is arranged and presented */
@@ -5,22 +7,32 @@ is arranged and presented */
 body {
     padding: 10%;
     font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
+    color: #36454F;
+    background-color: #EDEADE;
+
 
 }
 
 /* text settings that are not directly related to font */
 p {
-    /* line-height: 1.5;
-    letter-spacing: 1em;
-    text-decoration: line-through;
-    text-transform: uppercase; */
-    text-align: justify;
-    text-indent: 1.5em;
+    text-indent: 2em;
+    text-decoration: underline black 2px; 
+    text-underline-position: under;
+    /* text-transform: uppercase; */
+    line-height: 2;
+    /* letter-spacing: .07em; */
+   
+    /* font-weight: lighter;
+    font-style: oblique; */
+    border: 1px solid gray;
+    
+}
 
-    /* font-weight: 700; */
-    
-    
+
+/* form elements to not inherit font properties by default */
+input, button {
+    font: inherit
 }
 
 
