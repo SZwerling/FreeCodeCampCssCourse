@@ -73,7 +73,9 @@ div:last-child:hover {
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-delay: .3s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
 }
 
 @keyframes slide {
